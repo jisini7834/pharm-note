@@ -7975,6 +7975,898 @@
           ]
         }
       ]
+    },
+    {
+      "id": "oncology",
+      "name": "혈액·종양",
+      "icon": "🔬",
+      "color": "#7C3AED",
+      "diseases": [
+        {
+          "id": "leukemia",
+          "name": "백혈병",
+          "guideline": "약물치료학 교재",
+          "tags": [
+            "AML",
+            "CML",
+            "APL",
+            "TKI",
+            "Imatinib",
+            "Venetoclax",
+            "Cytarabine",
+            "Anthracycline"
+          ],
+          "overview": "골수에서 시작하는 혈액암. 비정상 미성숙 백혈구 생성으로 감염 면역력 저하. ALL(소아 호발)·CLL·AML(50세↑, 남성>여성)·CML(성인 백혈병 15~20%, 필라델피아 염색체)으로 분류. AML 치료 목표: 단기-완전관해(blast 완전 제거), 장기-완전관해 유지. CML 치료 목표: 혈구 정상화 + BCR-ABL 유전자 보유 세포 사멸.",
+          "criteria": [
+            {
+              "label": "AML 진단 기준",
+              "sbp": "골수 blast > 20%",
+              "dbp": "Pre-leukemia: 5~20%"
+            },
+            {
+              "label": "AML 좋은 예후 염색체",
+              "sbp": "t(8;21), Inv(16), t(16;16), t(15;17)",
+              "dbp": "APL은 t(15;17)"
+            },
+            {
+              "label": "AML 나쁜 예후",
+              "sbp": "고령, M5·M6·M7 subtype",
+              "dbp": ""
+            },
+            {
+              "label": "CML 특징",
+              "sbp": "필라델피아 염색체 (BCR/ABL 유전자)",
+              "dbp": "비장비대·피로·체중감소"
+            }
+          ],
+          "guidelines": [
+            {
+              "title": "📋 AML 치료 전략",
+              "items": [
+                "조혈세포이식: 가장 근본적 치료. 공여자 찾기 어려움",
+                "항암요법 표준: 7+3 regimen (Cytarabine 7일 + Anthracycline 3일)",
+                "Hypomethylating agents: Azacitidine(비다자)·Decitabine(다코젠) — DNA 메틸화 억제 → 세포 사멸",
+                "표적치료: FLT3 변이 → Midostaurin·Gilteritinib / CD33 표적 → Gemtuzumab ozogamicin / BCL-2 억제 → Venetoclax(벤클렉스타)"
+              ]
+            },
+            {
+              "title": "📋 APL 치료 (M3형 AML)",
+              "items": [
+                "ATRA(tretinoin): 악성 전골수세포 → 성숙 호중구로 분화 촉진",
+                "ATO(Arsenic trioxide, 아시트리주): DNA fragmentation을 통한 전골수세포 세포자살 유도",
+                "⚠️ ATRA 초기 사용 시 분화증후군 주의 (발열·부종·호흡곤란·저혈압)",
+                "⚠️ ATRA 최기형성 주의"
+              ]
+            },
+            {
+              "title": "📋 CML 치료 전략 — BCR-ABL TKI 세대별",
+              "items": [
+                "1세대: Imatinib(글리벡) — CML 400mg 1일1회, 급성기 600~800mg",
+                "2세대: Dasatinib(스프라이셀) 100~140mg 1일1회 / Nilotinib(타시그나) 공복 복용 / Radotinib(슈펙트) 공복 복용 / Bosutinib(보술리프)",
+                "3세대: Ponatinib(아이클루시그) — T315I 돌연변이에도 사용 가능",
+                "TKI 내성 시: Omacetaxine (리보솜 subunit A site 결합 → BCR-ABL 단백 생산 억제)"
+              ]
+            },
+            {
+              "title": "💊 주요 약물 복용법·주의사항",
+              "items": [
+                "Imatinib(글리벡): 식사 + 물 충분히 복용 (위장장애 예방). 부작용: 호중구감소·간기능이상·부종·발진·근육경련·오심",
+                "Nilotinib(타시그나): 공복 복용. 금기: QT 연장증후군·저K·저Mg",
+                "Radotinib(슈펙트): 공복 복용. 부작용: 혈소판감소증·고빌리루빈혈증",
+                "Dasatinib(스프라이셀): 부작용 체액저류·흉막삼출·QT 연장·울혈성 심부전",
+                "Venetoclax(벤클렉스타): 식사와 함께 복용. 항고요산혈증제 병용 투여",
+                "Midostaurin: 식사와 함께 복용. 부작용: 백혈구·림프구 감소·중성구감소성 발열·간독성",
+                "Cytarabine: 소뇌독성·손발증후군. 결막염 예방 → 스테로이드 안약 사용",
+                "Anthracycline(Daunorubicin·Idarubicin): 심독성·간독성. 예방 목적으로 Dexrazoxane 투여"
+              ]
+            },
+            {
+              "title": "⚠️ DUR 주요 병용금기",
+              "items": [
+                "Nilotinib + Domperidone: QTc 연장 위험 (TdP 포함)",
+                "Radotinib + Domperidone: QTc 연장 위험",
+                "Imatinib + Asunaprevir: 아수나프레비르 농도 상승 → 간 이상반응",
+                "Dasatinib + Asunaprevir: 동일",
+                "Tretinoin + Tetracycline계: 두개내 고혈압 위험",
+                "Tretinoin + Isotretinoin: 비타민A 과잉증",
+                "Venetoclax: 임부금기 1등급"
+              ]
+            }
+          ],
+          "firstLine": [
+            {
+              "name": "Cytarabine + Anthracycline (7+3 regimen)",
+              "brand": "Cytarabine(시타라빈주) + Daunorubicin(다우노신주) 또는 Idarubicin",
+              "mechanism": "Cytarabine: Pyrimidine 길항제. Anthracycline: DNA 삽입·위상이성화효소 II 억제",
+              "dosage": "Cytarabine 7일 연속 + Anthracycline 3일 (7+3 regimen)",
+              "notes": "AML 표준 유도요법. Daunorubicin 심독성 > Idarubicin. Dexrazoxane 예방 투여"
+            },
+            {
+              "name": "Imatinib (글리벡) — CML 1세대 TKI",
+              "brand": "글리벡필름코팅정 100mg",
+              "mechanism": "BCR-ABL protein ATP binding site 결합 → 활성 억제",
+              "dosage": "CML: 400mg 1일1회. 급성기: 600~800mg. 식사+물과 함께",
+              "notes": "임부금기 2등급. Asunaprevir 병용 금기"
+            },
+            {
+              "name": "ATRA (Tretinoin) — APL",
+              "brand": "베사노이드연질캡슐",
+              "mechanism": "악성 전골수세포 → 성숙 호중구로 분화 촉진",
+              "dosage": "ATO와 병용",
+              "notes": "최기형성(임부금기 1등급). 초기 분화증후군 주의. Tetracycline 병용 시 두개내 고혈압"
+            }
+          ],
+          "secondLine": [
+            {
+              "name": "Venetoclax (벤클렉스타) — BCL-2 억제제",
+              "brand": "벤클렉스타정 100mg",
+              "mechanism": "BCL-2 억제 → 암세포 세포자살 유도",
+              "dosage": "식사와 함께 복용. 항고요산혈증제 병용",
+              "notes": "AML·CLL. 골수억제·피로·상부호흡기 감염 부작용. 임부금기 1등급"
+            },
+            {
+              "name": "Nilotinib (타시그나) — CML 2세대 TKI",
+              "brand": "타시그나캡슐 150·200mg",
+              "mechanism": "BCR-ABL ATP binding site 결합 억제",
+              "dosage": "공복 복용. 1일 최대 800mg",
+              "notes": "금기: QT 연장증후군·저K·저Mg. Domperidone 병용 금기(QTc 연장)"
+            },
+            {
+              "name": "Ponatinib (아이클루시그) — CML 3세대 TKI",
+              "brand": "아이클루시그정 15·30·45mg",
+              "mechanism": "T315I 돌연변이 포함 BCR-ABL 억제",
+              "dosage": "1세대·2세대 TKI 실패 또는 T315I 변이 시",
+              "notes": "부작용: 고혈압·발진·편두통·발열"
+            },
+            {
+              "name": "Azacitidine / Decitabine — Hypomethylating agent",
+              "brand": "비다자주(Azacitidine) / 다코젠주(Decitabine)",
+              "mechanism": "DNA 메틸화 억제 → 종양억제유전자 재발현 → 세포사멸",
+              "dosage": "고령 AML 또는 집중항암요법 불가 환자",
+              "notes": "임부금기 2등급"
+            }
+          ],
+          "sideEffects": [
+            "Anthracycline(Daunorubicin·Idarubicin): 심독성(LVEF 측정 필요)·간독성 — Dexrazoxane 예방",
+            "Cytarabine: 소뇌독성, 손발증후군, 결막염 → 스테로이드 안약",
+            "Imatinib: 호중구감소, 간기능 이상, 부종, 발진, 근육경련, 오심",
+            "Nilotinib: 범혈구 감소, QT 연장, 두통, 피로",
+            "Dasatinib: 호중구감소, 체액저류, 흉막삼출, QT 연장, 울혈성 심부전",
+            "Midostaurin: 백혈구·림프구 감소, 중성구감소성 발열, 간독성",
+            "Tretinoin(ATRA): 최기형성, 초기 분화증후군(발열·부종·호흡곤란·저혈압)"
+          ],
+          "contraindications": [
+            "Nilotinib: QT 연장증후군·저K·저Mg 금기",
+            "Nilotinib·Radotinib + Domperidone: QTc 연장 병용 금기",
+            "Tretinoin: 임부금기 1등급. Tetracycline 계열 병용 시 두개내 고혈압",
+            "TKI 계열 + Asunaprevir: 아수나프레비르 간 이상반응 위험"
+          ],
+          "combos": [
+            "AML 표준: Cytarabine 7일 + Anthracycline 3일 (7+3 regimen)",
+            "APL: ATRA + ATO (± Anthracycline)",
+            "FLT3 변이 AML: 7+3 + Midostaurin",
+            "고령/불량예후 AML: Azacitidine 또는 Decitabine + Venetoclax",
+            "CML 1차: Imatinib 또는 2세대 TKI (Dasatinib·Nilotinib)",
+            "Anthracycline 투여 시: Dexrazoxane 예방적 투여"
+          ]
+        },
+        {
+          "id": "lung-cancer",
+          "name": "폐암",
+          "guideline": "약물치료학 교재",
+          "tags": [
+            "NSCLC",
+            "SCLC",
+            "EGFR",
+            "ALK",
+            "TKI",
+            "Osimertinib",
+            "Pembrolizumab",
+            "Cisplatin"
+          ],
+          "overview": "2020년 사망률 1위 암. 주요 위험인자: 흡연(가장 주요)·간접흡연·석면·비소. NSCLC(편평세포암·선암·대세포암)와 SCLC로 분류. NSCLC는 1~4기, SCLC는 제한성/확장성 병기. SCLC는 항암요법 반응성 좋으나 빠르게 전이. NSCLC 표적치료: EGFR 변이(가장 흔함)→TKI, EML4-ALK→ALK 억제제.",
+          "criteria": [
+            {
+              "label": "NSCLC 1~2기",
+              "sbp": "수술 가능",
+              "dbp": ""
+            },
+            {
+              "label": "NSCLC 3~4기",
+              "sbp": "수술 불가 (3기 일부 혼재)",
+              "dbp": ""
+            },
+            {
+              "label": "EGFR 변이 (가장 흔함)",
+              "sbp": "Exon 19 deletion > Exon 21 L858R",
+              "dbp": "EGFR TKI 사용"
+            },
+            {
+              "label": "EGFR T790M 변이 (내성)",
+              "sbp": "3세대 TKI (Osimertinib 등)",
+              "dbp": ""
+            },
+            {
+              "label": "EML4-ALK 변이",
+              "sbp": "ALK 억제제 (Crizotinib·Alectinib 등)",
+              "dbp": "두 번째로 많은 변이"
+            }
+          ],
+          "guidelines": [
+            {
+              "title": "📋 NSCLC 표적치료 약물",
+              "items": [
+                "EGFR 1세대(가역적): Erlotinib(타쎄바)·Gefitinib(이레사)",
+                "EGFR 2세대(비가역적): Afatinib(지오트립)·Dacomitinib(비짐프로)",
+                "EGFR 3세대(T790M 선택적): Osimertinib(타그리소)·Olmutinib(올리타)·Lazertinib(렉라자)",
+                "ALK/ROS-1 억제제: Crizotinib(잴코리)·Ceritinib·Alectinib",
+                "BRAF + MEK 억제제: Dabrafenib + Trametinib (항상 병용)"
+              ]
+            },
+            {
+              "title": "📋 NSCLC 화학요법 요법",
+              "items": [
+                "1) Cisplatin + Pemetrexed (비편평세포암 선호)",
+                "2) Cisplatin + Gemcitabine·Docetaxel·Vinorelbine·Etoposide",
+                "3) Carboplatin + Pemetrexed",
+                "4) Carboplatin + Gemcitabine·Paclitaxel",
+                "노인·항암 내약성 낮은 환자: 단일약제 요법 가능"
+              ]
+            },
+            {
+              "title": "📋 SCLC 치료",
+              "items": [
+                "제한 병기: EP (Etoposide + Cisplatin) 또는 EC (Etoposide + Carboplatin) ± 방사선",
+                "확장 병기: EP / EC / IP (Irinotecan + Cisplatin)"
+              ]
+            },
+            {
+              "title": "💊 주요 약물 복용법",
+              "items": [
+                "Erlotinib(타쎄바): 공복 복용. 1일1회 150mg (췌장암 100mg)",
+                "Gefitinib(이레사): 식사 무관. 1일1회 250mg",
+                "Afatinib(지오트립): 공복 복용. 1일1회 40mg",
+                "Osimertinib(타그리소): 식사 무관. 1일1회 80mg",
+                "Lazertinib(렉라자): 식사 무관. 1일1회 240mg(80mg×3정)",
+                "Crizotinib(잴코리): 식사 무관. 1일2회 250mg",
+                "Ceritinib: 식사와 함께 복용",
+                "Alectinib: 식사와 함께 복용"
+              ]
+            },
+            {
+              "title": "💊 항암화학요법 주요 독성",
+              "items": [
+                "Cisplatin: 신독성(수분 보충 필수)·이독성·말초신경병증. 예방적 항구토제 필수",
+                "Pemetrexed: Folate 길항제 → Vit B12·엽산 보충 필수. 발진 시 전날·당일·다음날 Dexamethasone 경구. NSAIDs·신독성 약물·Probenecid는 Pemetrexed 농도 상승",
+                "Carboplatin: Cisplatin보다 신독성·구역구토 적음",
+                "Docetaxel: 감각이상·골수억제·부종·체액저류 → Dexamethasone 예방",
+                "Vinorelbine: 장기 투여 시 말초신경독성·요저류·변비·장폐색",
+                "Etoposide: 저혈압·구역구토·골수억제",
+                "Irinotecan: 설사·구역구토·골수억제. UGT1A1 결핍 시 용량 조절"
+              ]
+            },
+            {
+              "title": "⚠️ DUR 주요 주의사항",
+              "items": [
+                "Erlotinib·Gefitinib·Afatinib·Osimertinib·Lazertinib: 임부금기 2등급",
+                "Crizotinib + Asunaprevir: 병용 금기",
+                "Ceritinib + Asunaprevir: 병용 금기",
+                "Pemetrexed + NSAIDs·신독성약물·Probenecid: 농도 증가 → 독성 증가",
+                "Irinotecan + Itraconazole: 골수억제·설사 부작용 증가 (Itraconazole 투여 중·종료 후 2주간 금기)"
+              ]
+            }
+          ],
+          "firstLine": [
+            {
+              "name": "Osimertinib (타그리소) — EGFR 3세대 TKI",
+              "brand": "타그리소정 40·80mg",
+              "mechanism": "EGFR 활성변이 + T790M 내성변이 선택적 억제",
+              "dosage": "1일1회 80mg. 식사 무관",
+              "notes": "부작용: 간질성폐질환·발진·설사·QT 연장. 임부금기 2등급"
+            },
+            {
+              "name": "Gefitinib (이레사) — EGFR 1세대 TKI",
+              "brand": "이레사정 250mg",
+              "mechanism": "EGFR 가역적 억제",
+              "dosage": "1일1회 250mg. 식사 무관",
+              "notes": "부작용: 간질성폐질환·발진·설사. 임부금기 2등급"
+            },
+            {
+              "name": "Alectinib (알레센자) — ALK 억제제",
+              "brand": "알레센자캡슐 150mg",
+              "mechanism": "ALK 억제 → EML4-ALK 변이 NSCLC 표적",
+              "dosage": "식사와 함께 복용",
+              "notes": "부작용: 간독성·간질성폐질환·서맥·근육통·광과민성·신부전"
+            },
+            {
+              "name": "Cisplatin + Pemetrexed",
+              "brand": "씨스푸란주 + 알림타주",
+              "mechanism": "Cisplatin: 알킬화제(DNA 가교). Pemetrexed: Folate 길항제",
+              "dosage": "Pemetrexed 투여 전 Vit B12(9주 전부터)·엽산 보충 필수",
+              "notes": "비편평세포 NSCLC 선호. Cisplatin 신독성 → 수분 보충 필수"
+            }
+          ],
+          "secondLine": [
+            {
+              "name": "Crizotinib (잴코리) — ALK/ROS-1 억제제",
+              "brand": "잴코리캡슐 250mg",
+              "mechanism": "ALK, ROS-1, MET 억제",
+              "dosage": "1일2회 250mg. 식사 무관",
+              "notes": "부작용: 간독성·폐렴·QT 연장·심부전·부종. Asunaprevir 병용 금기. 임부금기 2등급"
+            },
+            {
+              "name": "Bevacizumab (아바스틴) — 항VEGF",
+              "brand": "아바스틴주",
+              "mechanism": "VEGF 억제 → 종양 혈관신생 억제",
+              "dosage": "화학요법과 병용",
+              "notes": "부작용: 혈관신생 억제·상처치유 저해. 임부금기 2등급"
+            },
+            {
+              "name": "Erlotinib (타쎄바) — EGFR 1세대 TKI",
+              "brand": "타쎄바정 150mg",
+              "mechanism": "EGFR 가역적 억제",
+              "dosage": "1일1회 150mg. 공복 복용. 췌장암은 100mg",
+              "notes": "부작용: 발진·소양증·설사·호흡곤란. 임부금기 2등급"
+            }
+          ],
+          "sideEffects": [
+            "EGFR TKI 공통: 피부발진, 간질성폐질환, 설사",
+            "Osimertinib·Lazertinib: QT 연장 추가 주의",
+            "ALK 억제제: 간독성, 서맥, QT 연장, 간질성폐질환",
+            "Cisplatin: 신독성·이독성·말초신경병증 (CIPN)",
+            "Pemetrexed: 골수억제·발진 (Vit B12·엽산·Dexamethasone으로 예방)",
+            "Docetaxel: 감각이상·체액저류·골수억제",
+            "Irinotecan: 설사(조기-Atropine, 후기-Loperamide)·골수억제"
+          ],
+          "contraindications": [
+            "Crizotinib·Ceritinib·Imatinib·Nilotinib·Dasatinib + Asunaprevir: 병용 금기",
+            "Pemetrexed + NSAIDs·신독성약물·Probenecid: 농도 상승 주의",
+            "Irinotecan + Itraconazole: 이상반응 증가 (Itraconazole 투여 중·종료 후 2주간 금기)",
+            "모든 항암 TKI: 임부금기 (2등급 이상)"
+          ],
+          "combos": [
+            "EGFR 변이 NSCLC: EGFR TKI 단독 (1~3세대 중 선택)",
+            "ALK/ROS-1 양성: Alectinib 또는 Crizotinib",
+            "BRAF + MEK: Dabrafenib + Trametinib 반드시 병용",
+            "비편평세포 NSCLC 화학요법: Cisplatin + Pemetrexed",
+            "SCLC 제한 병기: Etoposide + Cisplatin ± 방사선",
+            "Pemetrexed 투여 시: Vit B12 + 엽산 보충 필수"
+          ]
+        },
+        {
+          "id": "colorectal-cancer",
+          "name": "대장직장암",
+          "guideline": "약물치료학 교재",
+          "tags": [
+            "FOLFOX",
+            "FOLFIRI",
+            "Capecitabine",
+            "Bevacizumab",
+            "Cetuximab",
+            "Oxaliplatin",
+            "5-FU"
+          ],
+          "overview": "위험요인: 나이·가족력·유전·붉은 고기·비만·흡연·IBD·당뇨. 0~4기로 분류. 1~3기: 완치 목표. 4기: 완화·고식 치료. 표준 보조요법: FOLFOX(대장암)·FOLFIRI(전이성). EGFR 표적치료 사용 시 RAS 변이 없어야 함. 손발증후군(Capecitabine·5-FU), CIPN(Platinum계)이 주요 부작용.",
+          "criteria": [
+            {
+              "label": "1~3기",
+              "sbp": "완치·근치 치료 목표",
+              "dbp": ""
+            },
+            {
+              "label": "4기 (전이성)",
+              "sbp": "완화·고식 치료 목표",
+              "dbp": "FOLFIRI 많이 사용"
+            },
+            {
+              "label": "EGFR 표적치료 조건",
+              "sbp": "야생형 KRAS 필요",
+              "dbp": "RAS 변이 있으면 사용 불가"
+            }
+          ],
+          "guidelines": [
+            {
+              "title": "📋 대장암 보조 항암 요법 레지멘",
+              "items": [
+                "mFOLFOX6: Leucovorin + 5-FU + Oxaliplatin (대장·직장암 표준)",
+                "FOLFIRI: Leucovorin + 5-FU + Irinotecan (전이성 대장암)",
+                "CapeOX: Capecitabine + Oxaliplatin",
+                "Capecitabine 단독 (5-FU 경구 prodrug)",
+                "5-FU + Leucovorin"
+              ]
+            },
+            {
+              "title": "💊 mFOLFOX6 구성약물 역할",
+              "items": [
+                "Leucovorin: Thymidylate synthase + 5-FU 대사체 결합을 강화 → 5-FU 항암 효과 증가. MTX 해독제로도 사용",
+                "5-FU: Pyrimidine 길항제. 손발증후군·점막염 주요 부작용",
+                "Oxaliplatin: 알킬화제. Cisplatin보다 신독성·이독성 적음. 5-FU보다 먼저 투여",
+                "Oxaliplatin은 말초신경병증(CIPN) 유발"
+              ]
+            },
+            {
+              "title": "💊 Capecitabine 복용법",
+              "brand": "젤로다정",
+              "items": [
+                "식후 30분 이내 복용",
+                "3주 주기: 1일2회, 1,000~1,250mg/㎡, 2주 복용 후 1주 휴약",
+                "부작용: 손발증후군, 점막염",
+                "Vit B6(피리독신) 투여로 손발증후군 경감 가능",
+                "⚠️ Gimeracil 함유 약물(tegafur/gimeracil/oteracil) 병용 금기 (종료 후 7일간도 금기)"
+              ]
+            },
+            {
+              "title": "💊 Irinotecan 설사 대처",
+              "items": [
+                "조기 발병 설사 (투여 2~6시간 이내): Atropine IV 또는 SC",
+                "후기 발병 설사 (투여 1~12일 후, 3~5일 지속): Loperamide 투약",
+                "총 빌리루빈 상승 또는 UGT1A1 결핍 시 용량 조절 고려"
+              ]
+            },
+            {
+              "title": "⚠️ 손발증후군 (수족 증후군)",
+              "items": [
+                "원인 약물: Capecitabine(젤로다)·5-FU",
+                "증상: 발적·피부 벗겨짐·물집·부종",
+                "예방: 뜨겁거나 차가운 것 만지지 않기, 장갑·보습, 자외선 노출 피하기"
+              ]
+            },
+            {
+              "title": "⚠️ DUR 주요 주의사항",
+              "items": [
+                "5-FU·Capecitabine + Gimeracil 함유약: fluoropyrimidine 대사 감소 → 독성 증가. 종료 후 7일간도 금기",
+                "Irinotecan + Itraconazole: 골수억제·설사 증가 (Itraconazole 종료 후 2주간도 금기)",
+                "Irinotecan + Atazanavir: 골수기능 억제·설사 부작용 증강",
+                "Capecitabine: DPYD 유전자 검사 이상반응 발생 시 고려",
+                "Methotrexate + NSAIDs·Ibuprofen·Aspirin: 혈액학적 독성. MTX 임부금기 M등급"
+              ]
+            }
+          ],
+          "firstLine": [
+            {
+              "name": "mFOLFOX6",
+              "brand": "Leucovorin + 5-FU + Oxaliplatin",
+              "mechanism": "다중 기전: Leucovorin(5-FU 효과 강화) + 5-FU(Pyrimidine 길항) + Oxaliplatin(알킬화)",
+              "dosage": "2주 주기 반복. Oxaliplatin → 5-FU 순으로 투여",
+              "notes": "대장·직장암 보조요법 표준. CIPN(Oxaliplatin), 손발증후군(5-FU) 주의"
+            },
+            {
+              "name": "Capecitabine (젤로다)",
+              "brand": "젤로다정 150·500mg",
+              "mechanism": "5-FU 경구 Prodrug. 종양 내에서 5-FU로 전환",
+              "dosage": "식후 30분 이내. 1일2회 2주 복용·1주 휴약",
+              "notes": "손발증후군·점막염. Vit B6으로 경감. Gimeracil 병용 금기"
+            },
+            {
+              "name": "Cetuximab (얼비툭스) — 항EGFR",
+              "brand": "얼비툭스주",
+              "mechanism": "EGFR 단클론항체 → ERK/MAPK 억제",
+              "dosage": "야생형 KRAS 확인 후 사용",
+              "notes": "부작용: 발진·저마그네슘혈증·설사. RAS 변이 있으면 효과 없음"
+            }
+          ],
+          "secondLine": [
+            {
+              "name": "FOLFIRI",
+              "brand": "Leucovorin + 5-FU + Irinotecan",
+              "mechanism": "Leucovorin(5-FU 강화) + 5-FU(Pyrimidine 길항) + Irinotecan(Topoisomerase I 억제)",
+              "dosage": "2주 주기. 전이성 대장암에서 주로 사용",
+              "notes": "설사(Atropine/Loperamide)·중성구 감소·탈모. UGT1A1 결핍 시 용량 조절"
+            },
+            {
+              "name": "Bevacizumab (아바스틴) — 항VEGF",
+              "brand": "아바스틴주",
+              "mechanism": "VEGF 리간드 억제 → 종양 혈관신생 억제",
+              "dosage": "화학요법과 병용",
+              "notes": "부작용: 상처치유 저해·혈관신생 억제. 임부금기 2등급"
+            },
+            {
+              "name": "Regorafenib (스티바가)",
+              "brand": "스티바가정 40mg",
+              "mechanism": "다표적 키나제 억제 (VEGFR·RAF·RET 등)",
+              "dosage": "1일1회 160mg(4정). 3주 투약·1주 휴약. 매일 같은 시간 가벼운 식사 후",
+              "notes": "플루오로피리미딘·항VEGF·항EGFR 치료 실패 후 사용. 1일 최대 160mg"
+            }
+          ],
+          "sideEffects": [
+            "5-FU·Capecitabine: 손발증후군, 점막염, 설사",
+            "Oxaliplatin: CIPN(말초신경병증), 냉감각 과민",
+            "Cisplatin: 신독성, 이독성, CIPN",
+            "Irinotecan: 설사(조기·후기), 중성구 감소, 구역구토, 탈모",
+            "Cetuximab: 피부발진, 저마그네슘혈증",
+            "Bevacizumab: 상처치유 저해, 출혈, 혈전"
+          ],
+          "contraindications": [
+            "Cetuximab·Panitumumab: RAS 변이 환자에서 효과 없음 (사용 금지)",
+            "5-FU·Capecitabine + Gimeracil 함유약: 병용 및 종료 후 7일간 금기",
+            "Irinotecan + Itraconazole: 종료 후 2주간 금기",
+            "Methotrexate + NSAIDs: 혈액독성 증가 주의"
+          ],
+          "combos": [
+            "대장암 보조요법 표준: mFOLFOX6",
+            "전이성 대장암: FOLFIRI ± Bevacizumab 또는 Cetuximab(야생형 RAS)",
+            "CapeOX: Capecitabine + Oxaliplatin (경구 편의성)",
+            "Oxaliplatin 투여 시: 5-FU보다 먼저 투여",
+            "Leucovorin: 항상 5-FU와 병용 (5-FU 효과 강화)"
+          ]
+        },
+        {
+          "id": "breast-cancer",
+          "name": "유방암",
+          "guideline": "약물치료학 교재",
+          "tags": [
+            "HER2",
+            "HR",
+            "Trastuzumab",
+            "Tamoxifen",
+            "CDK4/6억제제",
+            "Aromatase억제제",
+            "PARP억제제"
+          ],
+          "overview": "위험인자: 여성·노화·BRCA1/2·가족력·이른 초경·늦은 폐경·호르몬 요법. 비침습(DCIS·LCIS)·침습암으로 분류. 국소진행 유방암까지 수술 가능. 전이 유방암은 완치 불가. HR(+)/HER2(+/-) 상태에 따라 내분비요법·표적치료·항암화학요법 조합.",
+          "criteria": [
+            {
+              "label": "HR(+) HER2(-)",
+              "sbp": "내분비요법 + CDK4/6 억제제 중심",
+              "dbp": "AI + Palbociclib/Ribociclib/Abemaciclib"
+            },
+            {
+              "label": "HR(-) HER2(+)",
+              "sbp": "Trastuzumab + Pertuzumab + Taxane 중심",
+              "dbp": ""
+            },
+            {
+              "label": "HR(+) HER2(+)",
+              "sbp": "HER2 표적 + 내분비요법 병합",
+              "dbp": ""
+            },
+            {
+              "label": "삼중음성 유방암",
+              "sbp": "항암화학요법 + 면역치료",
+              "dbp": "Pembrolizumab"
+            },
+            {
+              "label": "BRCA 변이",
+              "sbp": "PARP 억제제 (Olaparib·Talazoparib)",
+              "dbp": ""
+            }
+          ],
+          "guidelines": [
+            {
+              "title": "📋 병기별 치료 전략",
+              "items": [
+                "0기(DCIS): 수술 ± 방사선 ± 호르몬 치료 5년",
+                "1~2기(HR+ HER2-): 수술 → 방사선 → 항암화학요법 → 내분비요법 5년↑",
+                "1~2기(HER2+): 수술 → 항암요법 ± HER2 표적치료 → HR(+)면 내분비요법",
+                "3기(국소진행): 수술 전 항암요법 → 수술 ± 방사선 → 보조 치료",
+                "4기 HR(+) HER2(-): 내분비요법 단독 또는 + 표적치료 우선 (독성 적음)",
+                "4기 HR(-) HER2(+): Trastuzumab + Pertuzumab + Docetaxel 1차",
+                "4기 골전이: Zoledronic acid·Pamidronate·Denosumab"
+              ]
+            },
+            {
+              "title": "💊 내분비요법 약물",
+              "items": [
+                "Aromatase inhibitors (AI, 폐경 후 여성): Anastrozole(아리미덱스)·Letrozole(페마라)·Exemestane(아로마신)",
+                "SERM: Tamoxifen(타목시펜)·Toremifene",
+                "SERD: Fulvestrant(파슬로덱스)",
+                "LHRH agonist (GnRH agonist): Goserelin·Leuprolide·Triptorelin",
+                "⚠️ Anastrozole + Estrogen·Tamoxifen: Anastrozole 약리작용 감소 (병용 금기)"
+              ]
+            },
+            {
+              "title": "💊 표적치료 약물",
+              "items": [
+                "HER2 표적: Trastuzumab(허셉틴)·Pertuzumab(퍼제타)·Lapatinib(타이커브)·Neratinib",
+                "CDK4/6 억제제: Palbociclib(입랜스)·Ribociclib(키스칼리)·Abemaciclib",
+                "mTOR 억제제: Everolimus(아피니토) — 1일1회 10mg. 공복 or 식사와 함께 일관되게",
+                "PI3K 억제제: Alpelisib",
+                "PARP 억제제: Olaparib·Talazoparib (BRCA 변이 시)",
+                "Palbociclib(입랜스): 식사와 함께 복용. 부작용: 호중구 감소·감염"
+              ]
+            },
+            {
+              "title": "💊 전이 유방암 치료 요법",
+              "items": [
+                "HR(+) HER2(-) 1차: AI + CDK4/6 억제제 / Fulvestrant ± CDK4/6 억제제",
+                "HR(-) HER2(+) 1차: Trastuzumab + Pertuzumab + Docetaxel",
+                "BRCA 변이: Olaparib 또는 Talazoparib",
+                "삼중음성: 항암화학요법 ± Atezolizumab(PD-L1) 또는 Pembrolizumab(PD-1)"
+              ]
+            },
+            {
+              "title": "⚠️ DUR 주요 주의사항",
+              "items": [
+                "Anastrozole + Tamoxifen: Anastrozole 혈장농도 감소 → 병용 금기",
+                "Tamoxifen + SSRI: Tamoxifen 효과 감소 주의",
+                "Toremifene + Amiodarone·Dronedarone: TdP 위험",
+                "Palbociclib + Itraconazole·Voriconazole·Posaconazole: 혈장농도 증가",
+                "Palbociclib + Carbamazepine·Rifampicin·St.John's Wort: 혈장농도 감소",
+                "Itraconazole + Trastuzumab: DM1 노출·독성 증가",
+                "Everolimus: 공복·식사 일관성 유지 (혈중농도 일정하게)"
+              ]
+            }
+          ],
+          "firstLine": [
+            {
+              "name": "Trastuzumab (허셉틴) — HER2 표적",
+              "brand": "허셉틴주",
+              "mechanism": "HER2 수용체 단클론항체 → HER2 과발현 종양 억제",
+              "dosage": "Pertuzumab·Docetaxel과 병용",
+              "notes": "부작용: 심독성(LVEF 측정)·호중구 감소·천식. 임부금기 2등급"
+            },
+            {
+              "name": "Tamoxifen (타목시펜) — SERM",
+              "brand": "놀바덱스정 10·20mg",
+              "mechanism": "에스트로겐 수용체 부분 길항제 (유방에서 길항)",
+              "dosage": "20mg 1일1회. 5~10년 복용",
+              "notes": "부작용: 안면홍조·질출혈·자궁내막 증식. SSRI 병용 시 효과 감소. 임부금기 2등급"
+            },
+            {
+              "name": "Palbociclib (입랜스) — CDK4/6 억제제",
+              "brand": "입랜스캡슐 75·100·125mg",
+              "mechanism": "CDK4/6 억제 → 세포주기 G1 정지",
+              "dosage": "식사와 함께. 3주 복용·1주 휴약",
+              "notes": "부작용: 호중구 감소·감염. Itraconazole·Posaconazole·Voriconazole 병용 시 농도 증가 주의"
+            },
+            {
+              "name": "Letrozole (페마라) — AI",
+              "brand": "페마라정 2.5mg",
+              "mechanism": "말초 조직 Aromatase 억제 → 에스트로겐 생성 억제",
+              "dosage": "2.5mg 1일1회. 폐경 후 여성",
+              "notes": "부작용: 골밀도 감소·홍조. 임부금기 1등급"
+            }
+          ],
+          "secondLine": [
+            {
+              "name": "Everolimus (아피니토) — mTOR 억제제",
+              "brand": "아피니토정 5·10mg",
+              "mechanism": "mTOR 억제 → 세포 성장·혈관신생 억제",
+              "dosage": "1일1회 10mg. 공복·식후 일관되게 (혈중농도 유지)",
+              "notes": "ER(+) HER2(-) 폐경 후 전이성 유방암. Itraconazole 등 CYP3A4 억제제와 주의"
+            },
+            {
+              "name": "Olaparib (린파자) — PARP 억제제",
+              "brand": "린파자정 100·150mg",
+              "mechanism": "PARP 억제 → DNA 손상 복구 불가 → BRCA 변이 세포 사멸",
+              "dosage": "BRCA1/2 변이 확인 후 사용",
+              "notes": "부작용: 피부발진·말초부종·피로·두통. 임부금기 2등급"
+            },
+            {
+              "name": "Fulvestrant (파슬로덱스) — SERD",
+              "brand": "파슬로덱스주 250mg/5mL",
+              "mechanism": "에스트로겐 수용체 완전 길항 + 수용체 분해",
+              "dosage": "500mg 1·15·29일 → 이후 매 28일 IM",
+              "notes": "HR(+) HER2(-) 전이성 유방암. 임부금기 2등급"
+            },
+            {
+              "name": "Lapatinib (타이커브) — HER2 TKI",
+              "brand": "타이커브정 250mg",
+              "mechanism": "HER2·EGFR 이중 TKI",
+              "dosage": "공복 복용. Capecitabine과 병용",
+              "notes": "부작용: 수족증후군·좌심실박출률 감소·발진·설사. 임부금기 2등급"
+            }
+          ],
+          "sideEffects": [
+            "Anthracycline(Doxorubicin·Epirubicin): 심독성·간독성 → Dexrazoxane 예방. Liposomal 제형은 심독성 감소",
+            "Trastuzumab·Pertuzumab: 심독성(LVEF 측정 필수)",
+            "Taxane(Paclitaxel·Docetaxel): 감각이상·근육통·심독성. 과민반응 → Dexamethasone·항히스타민제",
+            "AI(Anastrozole·Letrozole): 골밀도 감소·홍조",
+            "Tamoxifen: 안면홍조·자궁내막증식·혈전",
+            "CDK4/6 억제제: 호중구 감소·감염",
+            "Cyclophosphamide: 출혈성 방광염 → 수액·Mesna 투여. 골수억제"
+          ],
+          "contraindications": [
+            "Anastrozole + Tamoxifen·Estrogen: 병용 금기 (Anastrozole 효과 감소)",
+            "Tamoxifen + SSRI: Tamoxifen 효과 감소 주의",
+            "Palbociclib + 강한 CYP3A4 억제제(Itraconazole·Posaconazole·Voriconazole): 농도 증가 주의",
+            "Cyclophosphamide 고용량: 수액 + Mesna 필수",
+            "AI: 폐경 전 여성 사용 주의 (폐경 후 여성 대상)"
+          ],
+          "combos": [
+            "HR(+) HER2(-) 전이: AI + CDK4/6 억제제 (Palbociclib·Ribociclib·Abemaciclib)",
+            "HER2(+) 1차: Trastuzumab + Pertuzumab + Docetaxel",
+            "HER2(+) 이후: Lapatinib + Capecitabine",
+            "BRCA 변이: Olaparib 또는 Talazoparib",
+            "Anthracycline 사용 시: Dexrazoxane 예방적 투여",
+            "Taxane 과민반응 예방: Dexamethasone + 항히스타민제 전처치"
+          ]
+        },
+        {
+          "id": "cancer-supportive",
+          "name": "암질환 보조치료",
+          "guideline": "약물치료학 교재",
+          "tags": [
+            "항구토제",
+            "중성구감소성발열",
+            "G-CSF",
+            "암성통증",
+            "고칼슘혈증",
+            "종양용해증후군",
+            "5HT3길항제"
+          ],
+          "overview": "항암치료 중 발생하는 합병증 관리: 중성구 감소성 발열·항암제 유발 구역구토(CINV)·암성 통증·악성 고칼슘혈증·종양용해증후군·일혈. 각 합병증별 예방·치료 약물 선택이 핵심.",
+          "criteria": [
+            {
+              "label": "중성구 감소성 발열 기준",
+              "sbp": "열 ≥38.3℃ 또는 38℃ 1시간 이상",
+              "dbp": "ANC ≤500/㎣ 또는 48시간 내 500 이하 예측"
+            },
+            {
+              "label": "중성구 감소증",
+              "sbp": "ANC < 1,500/㎣",
+              "dbp": ""
+            },
+            {
+              "label": "악성 고칼슘혈증 중증",
+              "sbp": "> 14 mg/dL",
+              "dbp": "Saline + Bisphosphonate"
+            },
+            {
+              "label": "CINV 고위험 인자",
+              "sbp": "나이 < 50세, 여성, 구역구토 기왕력",
+              "dbp": ""
+            }
+          ],
+          "guidelines": [
+            {
+              "title": "💊 중성구 감소성 발열 항균요법",
+              "items": [
+                "저위험군 경구: Ciprofloxacin + Amoxicillin/Clavulanic acid",
+                "저위험군 주사: Piperacillin/Tazobactam·Cefepime·Imipenem/Cilastatin·Meropenem·Ceftazidime",
+                "고위험군(Vancomycin 불필요): Aminoglycoside + 항슈도모나스 Penicillin / Cefepime / Ceftazidime",
+                "고위험군(Vancomycin 필요): Vancomycin + Pip/Tazo·Cefepime·Imipenem·Meropenem ± Aminoglycoside",
+                "Vancomycin 필요 상황: 점막염·연조직감염·퀴놀론 예방요법·저혈압·패혈증 쇼크·MRSA 동정·중심정맥 혈류감염"
+              ]
+            },
+            {
+              "title": "💊 G-CSF (조혈성장인자)",
+              "items": [
+                "단기형: Filgrastim(류코스팀)·Lenograstim",
+                "장기형: Pegfilgrastim(뉴라스타)·Pegteograstim·Lipegfilgrastim",
+                "중성구 수 증가에 기여. 예방적 또는 치료적 투여"
+              ]
+            },
+            {
+              "title": "💊 CINV 항구토제 수용체별 약물",
+              "items": [
+                "5-HT3 길항제: Ondansetron(조프란)·Granisetron(카이트릴)·Palonosetron(알록시)·Ramosetron(나제아오디). 소화관·CNS 세로토닌 억제. 항암요법에 효과적",
+                "NK1 길항제: Aprepitant(에멘드)·Fosaprepitant·Netupitant/Palonosetron(아킨지오). 반감기 긴 아킨지오 선호",
+                "D2 길항제: Metoclopramide(맥페란)·Domperidone·Haloperidol·Chlorpromazine",
+                "Corticosteroid: Dexamethasone > Methylprednisolone. 항암요법에 사용",
+                "M1 길항제(멀미): Scopolamine",
+                "H1 길항제(멀미): Dimenhydrinate(보나링에이)·Diphenhydramine·Hydroxyzine"
+              ]
+            },
+            {
+              "title": "💊 암성 통증 치료 원칙",
+              "items": [
+                "경구제 선호. 통증 강도에 맞게 약물·용량 선택",
+                "PRN이 아닌 정해진 일정으로 투여",
+                "지속 심각한 통증: 장기형 약물 사용",
+                "변비 예방 미리 준비 (Docusate 등)",
+                "비마약성: Acetaminophen·NSAIDs",
+                "진통보조제: Pregabalin(리리카, 75mg bid 시작→최대 600mg/일)·Gabapentin(가바틴, 300→900mg/일 증량→최대 3600mg)·Amitriptyline(10~25mg/일 시작)·Duloxetine(60mg/일 시작→최대 120mg)·Carbamazepine(200~400mg/일)",
+                "마약성: 경구 Morphine 5~15mg = 주사 Morphine 1~5mg"
+              ]
+            },
+            {
+              "title": "💊 악성 고칼슘혈증 치료",
+              "items": [
+                "경증(10.5~11.9) + 무증상: 보행·수분 섭취",
+                "경증 + 증상 있거나 중등도~중증(≥12): Saline 보충 + Bisphosphonate",
+                "Bisphosphonate: Pamidronate(파노린주)·Zoledronic acid(조메타) 주로 사용",
+                "Denosumab(엑스지바): RANKL 억제제. 임부금기 1등급",
+                "불응성: Calcitonin(마약칼식주)·Gallium nitrate·Corticosteroid 추가"
+              ]
+            },
+            {
+              "title": "💊 종양용해증후군 치료",
+              "items": [
+                "증상: 소변량 감소·탈수·신부전·고요산혈증·산성뇨·WBC·LDH 증가",
+                "수액요법 + 소변 알칼리화 (NaHCO3, 타스나)",
+                "Allopurinol(자이로릭): 요산 생성 억제",
+                "Rasburicase(패스터텍): 요산 분해 효소 (급성 고요산혈증)",
+                "전해질 불균형 교정"
+              ]
+            },
+            {
+              "title": "💊 일혈 (Extravasation) 처치",
+              "items": [
+                "Anthracycline·Mitomycin C: 냉찜질. DMSO 해독제. Anthracycline에는 Dexrazoxane 추가",
+                "Vinca alkaloids·Etoposide: 온찜질. Hyaluronidase 해독제",
+                "Mechlorethamine: Sodium Thiosulfate 해독제"
+              ]
+            },
+            {
+              "title": "⚠️ DUR 주요 주의사항",
+              "items": [
+                "Granisetron·Ondansetron + Domperidone: QTc 연장 위험 (TdP)",
+                "Netupitant/Palonosetron(아킨지오) + Rifampicin: Netupitant 혈중농도 감소. 임부금기 1등급",
+                "Fosaprepitant + Pimozide: 피모지드 혈중농도 증가",
+                "Morphine + Moclobemide·Selegiline: 경련·반사항진·이상고열·혼수 병용 금기",
+                "Morphine + Buprenorphine: 진통효과 감소·금단증상. 이상반응 시 Naloxone",
+                "Oxycodone: 18세 미만 금기. 임부금기 2등급"
+              ]
+            }
+          ],
+          "firstLine": [
+            {
+              "name": "5-HT3 길항제 (항구토)",
+              "brand": "Ondansetron(조프란)·Granisetron(카이트릴·1일최대9mg)·Palonosetron(알록시)·Ramosetron(나제아오디)",
+              "mechanism": "소화관·CNS 5-HT3 수용체 차단 → 구역구토 억제",
+              "dosage": "항암요법 전 투여. Dexamethasone과 병용 시 효과 증가",
+              "notes": "+ Domperidone 병용 시 QTc 연장 위험. 임부금기 2등급"
+            },
+            {
+              "name": "Aprepitant / 아킨지오 (NK1 길항제)",
+              "brand": "에멘드캡슐(Aprepitant) / 아킨지오캡슐(Netupitant+Palonosetron)",
+              "mechanism": "NK1 수용체 차단 → 지연성 구역구토 억제",
+              "dosage": "아킨지오: 반감기 길어 선호. 항암 당일 1회 투여",
+              "notes": "아킨지오 임부금기 1등급. Rifampicin 병용 시 Netupitant 농도 감소"
+            },
+            {
+              "name": "Pegfilgrastim (뉴라스타) — 장기형 G-CSF",
+              "brand": "뉴라스타 프리필드시린지주",
+              "mechanism": "G-CSF 수용체 자극 → 골수에서 호중구 생성 촉진",
+              "dosage": "항암 주기당 1회 투여 (항암 후 24시간 뒤)",
+              "notes": "임부금기 2등급"
+            },
+            {
+              "name": "Zoledronic acid — 고칼슘혈증·골전이",
+              "brand": "조메타주사액 4mg",
+              "mechanism": "파골세포 억제 → 골흡수 감소·칼슘 방출 억제",
+              "dosage": "4mg IV 15분 이상. 3~4주 간격",
+              "notes": "고칼슘혈증·골전이 모두 적응. 신기능 모니터링"
+            }
+          ],
+          "secondLine": [
+            {
+              "name": "Dexamethasone (항구토 보조)",
+              "brand": "덱사메타손정·주",
+              "mechanism": "항염·항구토 기전 (정확한 기전 불명)",
+              "dosage": "5-HT3 길항제 또는 NK1 길항제와 병용",
+              "notes": "Methylprednisolone보다 효능 우수"
+            },
+            {
+              "name": "Allopurinol (자이로릭) — 고요산혈증",
+              "brand": "자이로릭정 100mg",
+              "mechanism": "Xanthine oxidase 억제 → 요산 생성 억제",
+              "dosage": "1일 최대 800mg",
+              "notes": "종양용해증후군 예방. Azathioprine 병용 시 독성 증가"
+            },
+            {
+              "name": "Morphine (암성통증)",
+              "brand": "엠에스알서방정·모르핀황산염주",
+              "mechanism": "μ-opioid 수용체 작용 → 통증 억제",
+              "dosage": "경구 5~15mg = 주사 1~5mg. 정해진 일정으로 투여",
+              "notes": "Moclobemide·Selegiline 병용 금기(경련·이상고열). 이상반응 시 Naloxone"
+            }
+          ],
+          "sideEffects": [
+            "5-HT3 길항제: QT 연장 (Domperidone 병용 시 위험). 두통, 변비",
+            "NK1 길항제: CYP3A4 억제·유도 약물과 상호작용",
+            "G-CSF: 골통증, 주사 부위 반응",
+            "Morphine: 변비(Docusate 예방)·진정·호흡억제",
+            "Bisphosphonate: 턱뼈괴사(ONJ)·신독성·독감 유사 증상(초기)",
+            "Allopurinol: 발진·발열(치명적 가능), 간염"
+          ],
+          "contraindications": [
+            "Granisetron·Ondansetron + Domperidone: QTc 연장 병용 금기",
+            "Morphine + MAO 억제제(Moclobemide·Selegiline): 경련·이상고열 병용 금기",
+            "Morphine + Buprenorphine: 진통효과 감소·금단증상",
+            "Oxycodone: 18세 미만 금기",
+            "Allopurinol + Azathioprine: 독성 증가 (Azathioprine 감량 필요)"
+          ],
+          "combos": [
+            "CINV 예방(고위험): 5-HT3 길항제 + NK1 길항제 + Dexamethasone 3제 병용",
+            "중성구 감소성 발열 고위험: Vancomycin + 광범위 항균제",
+            "고칼슘혈증 중등~중증: Saline 수액 + Zoledronic acid 또는 Pamidronate",
+            "종양용해증후군: 수액 + NaHCO3 + Allopurinol (또는 Rasburicase)",
+            "암성통증: 비마약성 → 마약성(Morphine) 단계적 증량 + 진통보조제"
+          ]
+        }
+      ]
     }
   ]
 }
