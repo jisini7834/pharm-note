@@ -100,7 +100,7 @@
     .main-content { flex: 1; padding: 32px 36px 60px; min-width: 0; overflow-y: auto; }
 
     /* WELCOME / MIND MAP */
-    .welcome-screen { display: flex; flex-direction: column; align-items: center; justify-content: flex-start; min-height: 60vh; padding-top: 80px; gap: 0; overflow: visible; }
+    .welcome-screen { display: flex; flex-direction: column; align-items: center; justify-content: flex-start; min-height: 60vh; padding-top: 160px; gap: 0; overflow: visible; }
 
     .mindmap-wrapper { position: relative; width: 740px; height: 720px; flex-shrink: 0; overflow: visible; }
     .mindmap-center {
@@ -506,24 +506,11 @@ function buildMindMap() {
     const popup = document.createElement('div');
     popup.className = 'mn-sub-popup';
     // Position popup: avoid going off-screen
-    // 팝업을 항상 중앙에서 바깥 방향으로 열기
-    const angle_deg = angle * 180 / Math.PI;
-    // 좌우 방향
-    if (nx < cx - 30) {
-      popup.style.right = '110%'; popup.style.left = 'auto';
-      popup.style.top = '-8px'; popup.style.bottom = 'auto';
-    } else if (nx > cx + 30) {
-      popup.style.left = '110%'; popup.style.right = 'auto';
-      popup.style.top = '-8px'; popup.style.bottom = 'auto';
-    // 위쪽
-    } else if (ny < cy) {
-      popup.style.top = '110%'; popup.style.bottom = 'auto';
-      popup.style.left = '50%'; popup.style.transform = 'translateX(-50%)';
-    // 아래쪽
-    } else {
-      popup.style.bottom = '110%'; popup.style.top = 'auto';
-      popup.style.left = '50%'; popup.style.transform = 'translateX(-50%)';
-    }
+    // 노드가 위쪽이면 아래로, 아래쪽이면 위로
+    if (nx < cx) { popup.style.right = '0'; popup.style.left = 'auto'; }
+    else          { popup.style.left = '0'; popup.style.right = 'auto'; }
+    if (ny < cy)  { popup.style.top = '110%'; popup.style.bottom = 'auto'; }
+    else          { popup.style.bottom = '110%'; popup.style.top = 'auto'; }
 
     cat.diseases.forEach(function(d) {
       const btn = document.createElement('button');
